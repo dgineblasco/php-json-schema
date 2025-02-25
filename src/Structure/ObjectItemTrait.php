@@ -104,7 +104,7 @@ trait ObjectItemTrait
     }
 
     #[\ReturnTypeWillChange]
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         if ($this->__nestedObjects) {
             $result = $this->__arrayOfData;

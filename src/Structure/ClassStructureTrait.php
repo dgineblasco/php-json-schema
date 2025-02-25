@@ -96,7 +96,7 @@ trait ClassStructureTrait
      * @return \stdClass
      */
     #[\ReturnTypeWillChange]
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         $result = new \stdClass();
         $schema = static::schema();

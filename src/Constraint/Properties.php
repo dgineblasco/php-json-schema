@@ -165,7 +165,7 @@ class Properties extends ObjectItem implements Constraint
     }
 
     #[\ReturnTypeWillChange]
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         $result = $this->toArray();
 
